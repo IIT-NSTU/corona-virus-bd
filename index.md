@@ -1,19 +1,5 @@
 # Coronavirus in Bangladesh
 
-# Data Collection about Coronavirus in Bangladesh
->
-> [Google Form](https://forms.gle/A2pxo4erUWCoMT5t9)
->
-
-# People
->
-> Data Science Group, [IIT, NSTU](https://github.com/iit-nstu) 
-```
-Baby Step
-```
->
-
-# Inspiration
->
-> [coronavirus.app](coronavirus.app)
->
+| Date|Region|Infected|Recovered|Death
+|---|---|---|---|---|
+|17-03-2020|Bangladesh|10|3|0|
