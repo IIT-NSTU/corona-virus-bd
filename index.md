@@ -4,4 +4,4 @@
 |---|---|---|---|---|
 |17-03-2020|Bangladesh|10|3|0|
 
-Know about [us](https://iit-nstu.github.io/corona-virus-bd/contact-us.md)
+Know about [us](https://iit-nstu.github.io/corona-virus-bd/contact-us.html)
