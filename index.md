@@ -4,19 +4,16 @@
 >
 > [Google Form](https://forms.gle/A2pxo4erUWCoMT5t9)
 >
+
 # People
 >
 > Data Science Group, [IIT, NSTU](https://github.com/iit-nstu) 
+```
+Baby Step
+```
 >
-
-
 
 # Inspiration
 >
-> coronavirus.app 
+> [coronavirus.app](coronavirus.app)
 >
-
-```
-Baby Step
-
-```
