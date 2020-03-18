@@ -76,7 +76,7 @@
     </tr>
   </table>
   <div id="visualization-part">
-    <img src="https://github.com/IIT-NSTU/IIT-NSTU.github.io/raw/master/dp_dipok.jpg" id="data-image" width="400" height="500"></img>
+    <img src="https://github.com/IIT-NSTU/IIT-NSTU.github.io/raw/master/dp_dipok.jpg" id="data-image" width="800" height="500"/>
   <div>  
   
 </div>
