@@ -18,8 +18,7 @@
 <option>Chandpur</option>
 <option>Chattogram</option>
 <option>Cumilla</option>
-<option>Cox's</option>
-<option>Bazar</option>
+<option>Cox's Bazar</option>
 <option>Feni</option>
 <option>Khagrachhari</option>
 <option>Lakshmipur</option>
