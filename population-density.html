@@ -10,23 +10,29 @@
       <b>Select Divison</b>
     </td>
     <td>
-      <select id="districts">
-<option>Barisal</option>
-<option>Chittagong</option>
-<option>Dhaka</option>
-<option>Khulna</option>
-<option>Mymensingh</option>
-<option>Rajshahi</option>
-<option>Rangpur</option>
-<option>Sylhet</option>
+      <select id="divisions" onselect="pull_division">
+<option value="Barisal">Barisal</option>
+<option value="Chittagong" >Chittagong</option>
+<option value="Dhaka">Dhaka</option>
+<option value="Khulna">Khulna</option>
+<option value="Mymensingh">Mymensingh</option>
+<option value="Rajshahi">Rajshahi</option>
+<option value="Rangpur">Rangpur</option>
+<option value="Sylhet">Sylhet</option>
 </select>
     </td>
     <tr>
   <table>
 
   <div id="visualization-part">
-    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/Population_Density_Plot_bd.png" id="data-image"/>
+    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/Population_Density_Plot_bd.png" id="division-data-image"/>
   <div>
   </div>
-  </body>
+    <script>
+            function pull_division(){
+              var my_select = document.getElementById("divisions");
+              var my_img = document.getElementById("division-data-image");
+            }
+    </script>
+  </body>    
 </html>
