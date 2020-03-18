@@ -80,4 +80,4 @@
   <div>  
   
 </div>
-Know about [us](https://iit-nstu.github.io/corona-virus-bd/contact-us.html)
+Know about <a href=https://iit-nstu.github.io/corona-virus-bd/contact-us.html>us</a>
