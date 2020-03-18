@@ -3,35 +3,75 @@
   <table>
     <tr>
     <td>
-      <select id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-      </select>
+      <b>Select District</b>
     </td>
     <td>
-      <select id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-      </select>
-    </td>
-    <td>
-      <select id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-      </select>
-    </td>
-    <td>
-      <select id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
+      <select id="districts">
+<option>Barguna</option>
+<option>Barishal</option>
+<option>Bhola</option>
+<option>Jhalokati</option>
+<option>Patuakhali</option>
+<option>Pirojpur</option>
+<option>Bandarban</option>
+<option>Brahmanbaria</option>
+<option>Chandpur</option>
+<option>Chattogram</option>
+<option>Cumilla</option>
+<option>Cox's</option>
+<option>Bazar</option>
+<option>Feni</option>
+<option>Khagrachhari</option>
+<option>Lakshmipur</option>
+<option>Noakhali</option>
+<option>Rangamati</option>
+<option>Dhaka</option>
+<option>Faridpur</option>
+<option>Gazipur</option>
+<option>Gopalganj</option>
+<option>Kishoreganj</option>
+<option>Madaripur</option>
+<option>Manikganj</option>
+<option>Munshiganj</option>
+<option>Narayanganj</option>
+<option>Narsingdi</option>
+<option>Rajbari</option>
+<option>Shariatpur</option>
+<option>Tangail</option>
+<option>Bagerhat</option>
+<option>Chuadanga</option>
+<option>Jashore</option>
+<option>Jhenaidah</option>
+<option>Khulna</option>
+<option>Kushtia</option>
+<option>Magura</option>
+<option>Meherpur</option>
+<option>Narail</option>
+<option>Satkhira</option>
+<option>Jamalpur</option>
+<option>Mymensingh</option>
+<option>Netrokona</option>
+<option>Sherpur</option>
+<option>Bogura</option>
+<option>Joypurhat</option>
+<option>Naogaon</option>
+<option>Natore</option>
+<option>Chapainawabganj</option>
+<option>Pabna</option>
+<option>Rajshahi</option>
+<option>Sirajganj</option>
+<option>Dinajpur</option>
+<option>Gaibandha</option>
+<option>Kurigram</option>
+<option>Lalmonirhat</option>
+<option>Nilphamari</option>
+<option>Panchagarh</option>
+<option>Rangpur</option>
+<option>Thakurgaon</option>
+<option>Habiganj</option>
+<option>Moulvibazar</option>
+<option>Sunamganj</option>
+<option>Sylhet</option>
       </select>
     </td>
     </tr>
