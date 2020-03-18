@@ -1,4 +1,6 @@
 # Coronavirus in Bangladesh
+Know about [us](https://iit-nstu.github.io/corona-virus-bd/contact-us.html)
+
 <div>
   <table>
     <tr>
@@ -80,4 +82,3 @@
   <div>  
   
 </div>
-Know about <a href=https://iit-nstu.github.io/corona-virus-bd/contact-us.html>us</a>
