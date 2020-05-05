@@ -21,7 +21,7 @@
 <option value="Sylhet">Sylhet</option>
 </select>
     </td>
-<td><input type="button" value="Refresh" onclick="selectFunction()" /></td>
+<td><input type="button" value="Refresh" onclick="selectDivision()" /></td>
     <tr>
   <table>
 
@@ -104,6 +104,7 @@
 <option>Sylhet</option>
       </select>
     </td>
+      <td><input type="button" value="Refresh" onclick="selectDistrict()" /></td>
     </tr>
   </table>
   <div id="visualization-part">
@@ -112,11 +113,17 @@
   
 </div>
     <script>
-            function selectFunction(){
+            function selectDivision(){
               var my_select = document.getElementById("divisions");
               var my_img = document.getElementById("division-data-image");
               my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/may_04_n_zero_plot_stack_div_"+my_select.value+".png";              
             }
+            function selectDistrict(){
+              var my_select = document.getElementById("districts");
+              var my_img = document.getElementById("district-data-image");
+              my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/may_04_n_zero_plot_stack_div_"+my_select.value+".png";              
+            }
+
     </script>
   </body>    
 </html>
