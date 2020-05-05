@@ -1,7 +1,8 @@
 # Coronavirus in Bangladesh
-* Know about [us](https://github.com/IIT-NSTU/corona-virus-bd)
+* Division-wise Confirmed COVID-19 cases is [here](https://iit-nstu.github.io/corona-virus-bd/covid-19-cases-division.html)
 * A mobile application is developed named <b>D2D Follow Corona</b>. Click [here](https://chandradasdipok.github.io/d2dfc/) for further details
 * Division-wise Population Density is [here](https://iit-nstu.github.io/corona-virus-bd/population-density.html) 
+* Know about [us](https://github.com/IIT-NSTU/corona-virus-bd)
 <div>
   <table>
     <tr>
