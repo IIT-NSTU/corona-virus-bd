@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Division-wise Covid-19 Cases</title>
+</head>
+<body>
+<div>
+  <table>
+    <tr>
+    <td>
+      <b>Select Divison</b>
+    </td>
+    <td>
+      <select id="divisions" >
+<option value="Barisal" selected="selected">Barisal</option>
+<option value="Chittagong" >Chittagong</option>
+<option value="Dhaka">Dhaka</option>
+<option value="Khulna">Khulna</option>
+<option value="Mymensingh">Mymensingh</option>
+<option value="Rajshahi">Rajshahi</option>
+<option value="Rangpur">Rangpur</option>
+<option value="Sylhet">Sylhet</option>
+</select>
+    </td>
+<td><input type="button" value="Refresh" onclick="selectFunction()" /></td>
+    <tr>
+  <table>
+
+  <div id="visualization-part">
+    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/may_04_n_zero_plot_stack_div_Barisal.png" id="division-data-image"/>
+  <div>
+  </div>
+    <script>
+            function selectFunction(){
+              var my_select = document.getElementById("divisions");
+              var my_img = document.getElementById("division-data-image");
+              my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/may_04_n_zero_plot_stack_div_"+my_select.value+".png";              
+            }
+    </script>
+  </body>    
+</html>
