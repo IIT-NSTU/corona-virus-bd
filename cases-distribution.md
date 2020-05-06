@@ -1,18 +1,13 @@
+# Coronavirus in Bangladesh
+* Know about [us](https://iit-nstu.github.io/)
+* COVID-19, [Data Science Group, IIT-NSTU](https://iit-nstu.github.io/corona-virus-bd)
+* Data Sources
+  - [IEDCR](https://www.iedcr.gov.bd)
+  - [Bangladesh Govt. Web Portal](https://www.bangladesh.gov.bd)
+
 <html>
-<head>
-<title>Distribution of COVID-19 Cases </title>
-</head>
 <body>
 <div>
-<ul>
-  <li>About <a href="https://iit-nstu.github.io">IIT-NSTU</a></li>
-  <li>About <a href="https://iit-nstu.github.io/corona-virus-bd">COVID-19, Data Science Group, IIT-NSTU</a></li>
-  <li>Data Sources</li>
-    <ul>
-        <li><a href="https://www.iedcr.gov.bd">IEDCR</a></li>
-    <li><a href="https://www.bangladesh.gov.bd">Bangladesh Govt. Web Portal</a></li>
-  </ul>
-</ul>  
 </div>
 <div>
   <table>
