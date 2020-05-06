@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Ranking Districts</title>
+  </head>
+<body>
+  <h1> Coronavirus in Bangladesh: Ranking Districts</h1>
+  <p>Last Update: <b>2020 May 05 14 Hr GMT+6 </b></p>
+ <ul>
+   <li><a href="https://iit-nstu.github.io/corona-virus-bd/">Home</a></li>
+   <li>Know about <a href="https://iit-nstu.github.io/">IIT-NSTU</li>
+   <li>COVID-19, <a href="https://iit-nstu.github.io/corona-virus-bd">Data Science Group, IIT-NSTU</a></li>
+    <li>Data Sources</li>
+   <ul>
+    <li><a href="https://www.iedcr.gov.bd">IEDCR</a></li>
+     <li><a href="https://www.bangladesh.gov.bd">Bangladesh Govt. Web Portal</a></li>
+     </ul>
+  </ul>
+<div>
+</div>
+  <div>
+  <table>
+    <tr>
+	<td>Select Unit</td>
+	<td>
+	<select id="units">
+	<option value="zero">N-Zero Score</option>
+	<option value="one">N-One Score</option>
+	</select>
+	</td>
+      <td><input type="button" value="Refresh" onclick="refresh()" /></td>
+    </tr>
+  </table>
+  <div id="visualization-part">
+    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/districts_n_zero_scores.png" id="unit-data-image"/>
+  <div>  
+  
+</div>
+		<script>
+            function refresh(){
+              var my_unit_select = document.getElementById("units");
+              var my_img = document.getElementById("unit-data-image");
+              my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/districts_n_"+my_unit_select.value+"_scores"+".png";              
+            }
+
+    </script>
+  </body>   
+</html>
