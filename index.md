@@ -1,9 +1,52 @@
+<html>
+<head>
+<title>Distribution of COVID-19 Cases </title>
+</head>
+<body>
 # Coronavirus in Bangladesh
 * Division-wise Confirmed COVID-19 cases is [here](https://iit-nstu.github.io/corona-virus-bd/cases-distribution.html)
 * A mobile application is developed named <b>D2D Follow Corona</b>. Click [here](https://chandradasdipok.github.io/d2dfc/) for further details
 * Division-wise Population Density is [here](https://iit-nstu.github.io/corona-virus-bd/population-density.html) 
 * Know about [us](https://github.com/IIT-NSTU/corona-virus-bd)
 <div>
+<ul>
+  <li>About <a href="https://iit-nstu.github.io">IIT-NSTU</a></li>
+  <li>About <a href="https://iit-nstu.github.io/corona-virus-bd">COVID-19, Data Science Group, IIT-NSTU</a></li>
+  <li>Data Sources</li>
+    <ul>
+        <li><a href="https://www.iedcr.gov.bd">IEDCR</a></li>
+    <li><a href="https://www.bangladesh.gov.bd">Bangladesh Govt. Web Portal</a></li>
+  </ul>
+</ul>  
+</div>
+<div>
+  <table>
+    <tr>
+    <td>
+      <b>Select Divison</b>
+    </td>
+    <td>
+      <select id="divisions" >
+<option value="Barisal" selected="selected">Barisal</option>
+<option value="Chittagong" >Chittagong</option>
+<option value="Dhaka">Dhaka</option>
+<option value="Khulna">Khulna</option>
+<option value="Mymensingh">Mymensingh</option>
+<option value="Rajshahi">Rajshahi</option>
+<option value="Rangpur">Rangpur</option>
+<option value="Sylhet">Sylhet</option>
+</select>
+    </td>
+<td><input type="button" value="Refresh" onclick="selectDivision()" /></td>
+    <tr>
+  <table>
+
+  <div id="visualization-part">
+    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/n_zero_plot_stack_div_Barisal.png" id="division-data-image"/>
+  <div>
+  </div>
+    
+  <div>
   <table>
     <tr>
     <td>
@@ -11,76 +54,92 @@
     </td>
     <td>
       <select id="districts">
-<option>Barguna</option>
-<option>Barishal</option>
-<option>Bhola</option>
-<option>Jhalokati</option>
-<option>Patuakhali</option>
-<option>Pirojpur</option>
-<option>Bandarban</option>
-<option>Brahmanbaria</option>
-<option>Chandpur</option>
-<option>Chattogram</option>
-<option>Cumilla</option>
-<option>Cox's Bazar</option>
-<option>Feni</option>
-<option>Khagrachhari</option>
-<option>Lakshmipur</option>
-<option>Noakhali</option>
-<option>Rangamati</option>
-<option>Dhaka</option>
-<option>Faridpur</option>
-<option>Gazipur</option>
-<option>Gopalganj</option>
-<option>Kishoreganj</option>
-<option>Madaripur</option>
-<option>Manikganj</option>
-<option>Munshiganj</option>
-<option>Narayanganj</option>
-<option>Narsingdi</option>
-<option>Rajbari</option>
-<option>Shariatpur</option>
-<option>Tangail</option>
-<option>Bagerhat</option>
-<option>Chuadanga</option>
-<option>Jashore</option>
-<option>Jhenaidah</option>
-<option>Khulna</option>
-<option>Kushtia</option>
-<option>Magura</option>
-<option>Meherpur</option>
-<option>Narail</option>
-<option>Satkhira</option>
-<option>Jamalpur</option>
-<option>Mymensingh</option>
-<option>Netrokona</option>
-<option>Sherpur</option>
-<option>Bogura</option>
-<option>Joypurhat</option>
-<option>Naogaon</option>
-<option>Natore</option>
-<option>Chapainawabganj</option>
-<option>Pabna</option>
-<option>Rajshahi</option>
-<option>Sirajganj</option>
-<option>Dinajpur</option>
-<option>Gaibandha</option>
-<option>Kurigram</option>
-<option>Lalmonirhat</option>
-<option>Nilphamari</option>
-<option>Panchagarh</option>
-<option>Rangpur</option>
-<option>Thakurgaon</option>
-<option>Habiganj</option>
-<option>Moulvibazar</option>
-<option>Sunamganj</option>
-<option>Sylhet</option>
+<option value="Barguna">Barguna</option>
+<option value="Barishal">Barishal</option>
+<option value="Bhola">Bhola</option>
+<option value="Jhalokati">Jhalokati</option>
+<option value="Patuakhali">Patuakhali</option>
+<option value="Pirojpur">Pirojpur</option>
+<option value="Bandarban">Bandarban</option>
+<option value="Brahmanbaria">Brahmanbaria</option>
+<option value="Chandpur">Chandpur</option>
+<option value="Chattogram">Chattogram</option>
+<option value="Cumilla">Cumilla</option>
+<option value="Coxs-Bazar">Cox's Bazar</option>
+<option value="Feni">Feni</option>
+<option value="Khagrachhari">Khagrachhari</option>
+<option value="Lakshmipur">Lakshmipur</option>
+<option value="Noakhali">Noakhali</option>
+<option value="Rangamati">Rangamati</option>
+<option value="Dhaka">Dhaka</option>
+<option value="Faridpur">Faridpur</option>
+<option value="Gazipur">Gazipur</option>
+<option value="Gopalganj">Gopalganj</option>
+<option value="Kishoreganj">Kishoreganj</option>
+<option value="Madaripur">Madaripur</option>
+<option value="Manikganj">Manikganj</option>
+<option value="Munshiganj">Munshiganj</option>
+<option value="Narayanganj">Narayanganj</option>
+<option value="Narsingdi">Narsingdi</option>
+<option value="Rajbari">Rajbari</option>
+<option value="Shariatpur">Shariatpur</option>
+<option value="Tangail">Tangail</option>
+<option value="Bagerhat">Bagerhat</option>
+<option value="Chuadanga">Chuadanga</option>
+<option value="Jashore">Jashore</option>
+<option value="Jhenaidah">Jhenaidah</option>
+<option value="Khulna">Khulna</option>
+<option value="Kushtia">Kushtia</option>
+<option value="Magura">Magura</option>
+<option value="Meherpur">Meherpur</option>
+<option value="Narail">Narail</option>
+<option value="Satkhira">Satkhira</option>
+<option value="Jamalpur">Jamalpur</option>
+<option value="Mymensingh">Mymensingh</option>
+<option value="Netrokona">Netrokona</option>
+<option value="Sherpur">Sherpur</option>
+<option value="Bogura">Bogura</option>
+<option value="Joypurhat">Joypurhat</option>
+<option value="Naogaon">Naogaon</option>
+<option value="Natore">Natore</option>
+<option value="Chapainawabganj">Chapainawabganj</option>
+<option value="Pabna">Pabna</option>
+<option value="Rajshahi">Rajshahi</option>
+<option value="Sirajganj">Sirajganj</option>
+<option value="Dinajpur">Dinajpur</option>
+<option value="Gaibandha">Gaibandha</option>
+<option value="Kurigram">Kurigram</option>
+<option value="Lalmonirhat">Lalmonirhat</option>
+<option value="Nilphamari">Nilphamari</option>
+<option value="Panchagarh">Panchagarh</option>
+<option value="Rangpur">Rangpur</option>
+<option value="Thakurgaon">Thakurgaon</option>
+<option value="Habiganj">Habiganj</option>
+<option value="Moulvibazar">Moulvibazar</option>
+<option value="Sunamganj">Sunamganj</option>
+<option value="Sylhet">Sylhet</option>
       </select>
     </td>
+      <td><input type="button" value="Refresh" onclick="selectDistrict()" /></td>
     </tr>
   </table>
   <div id="visualization-part">
-    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/Population_Density_Plot_bd.png" id="data-image"/>
+    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/n_zero_plot_dist_Barguna.png" id="district-data-image"/>
   <div>  
   
 </div>
+    <script>
+            function selectDivision(){
+              var my_select = document.getElementById("divisions");
+              var my_img = document.getElementById("division-data-image");
+              my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/n_zero_plot_stack_div_"+my_select.value+".png";              
+            }
+            function selectDistrict(){
+              var my_select = document.getElementById("districts");
+              var my_img = document.getElementById("district-data-image");
+              my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/n_zero_plot_dist_"+my_select.value+".png";              
+            }
+
+    </script>
+  </body>   
+</html>
