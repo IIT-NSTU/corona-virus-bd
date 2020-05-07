@@ -7,26 +7,28 @@
   <p>Last Update: <b>2020 May 05 14 Hr GMT+6 </b></p>
  <ul>
    <li><a href="https://iit-nstu.github.io/corona-virus-bd/">Home</a></li>
-   <li>Know about <a href="https://iit-nstu.github.io/">IIT-NSTU</li>
-   <li>COVID-19, <a href="https://iit-nstu.github.io/corona-virus-bd">Data Science Group, IIT-NSTU</a></li>
+   <li>Know about <a href="https://iit-nstu.github.io/">IIT-NSTU</a></li><a href="https://iit-nstu.github.io/">
+   </a><li><a href="https://iit-nstu.github.io/">COVID-19, </a><a href="https://iit-nstu.github.io/corona-virus-bd">Data Science Group, IIT-NSTU</a></li>
     <li>Data Sources</li>
    <ul>
-    <li><a href="https://www.iedcr.gov.bd">IEDCR</a></li>
-     <li><a href="https://www.bangladesh.gov.bd">Bangladesh Govt. Web Portal</a></li>
+    <li><a href="https://www.iedcr.gov.bd/">IEDCR</a></li>
+     <li><a href="https://www.bangladesh.gov.bd/">Bangladesh Govt. Web Portal</a></li>
      </ul>
   </ul>
 <div>
 </div>
-<h3>Ranking Units</h3>
-<p>
-   <ul>
-    <li><b>N-Zero</b>:Number of Total  Cases of a  District</li>
-    <li><b>N-One</b>:Number of Total  Cases of a  District  Plus  Sum of Numbers of Total Cases of Neighbouring Districts</li>
+<h3>Ranking Units:Neighbouring Score</h3>
+<ul>
+    <li><b>N-Zero</b>:Set with element Considering District</li>
+    <li><b>N-One</b>: Set of  distrcits sharing border with considering   districts</li>
+    <li><b>N-Two</b>: Set of  distrcits sharing border with N-Zero districts</li>
+    <li><b>N-Zero Score</b>:  Total cases of  Considering District</li>
+    <li><b>N-One Score</b>: Summation of Total cases of  districts  where  districts  are union  set of N-Zero and  N-One</li>
+    <li><b>N-Two Score</b>: Summation of Total cases of  districts  where  districts  are union  set of N-Zero,  N-One  and N-Two</li>
      </ul>	
-</p>
 <div>
   <table>
-    <tr>
+    <tbody><tr>
 	<td>Select Unit </td>
 	<td>
 	<select id="units">
@@ -34,11 +36,11 @@
 	<option value="one">N-One Score</option>
 	</select>
 	</td>
-      <td><input type="button" value="Refresh" onclick="refresh()" /></td>
+      <td><input type="button" value="Refresh" onclick="refresh()"></td>
     </tr>
-  </table>
+  </tbody></table>
   <div id="visualization-part">
-    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/districts_n_zero_scores.png" id="unit-data-image"/>
+    <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/districts_n_zero_scores.png" id="unit-data-image">
   <div>  
   
 </div>
@@ -50,5 +52,6 @@
             }
 
     </script>
-  </body>   
-</html>
+     
+
+</div></div></body></html>
