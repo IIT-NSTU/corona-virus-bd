@@ -16,12 +16,12 @@
      </ul>
   </ul>
 <div>
-<p id="demo">District</p>
+<p id="dist">District</p>
 </div>
 <script>
 
 var my_district=document.getElementById("dist");
-my_district.innerHTML="Hi";
+my_district.innerHTML=getUrlParam("d","No District");
   
 function getUrlVars() {
     var vars = {};
