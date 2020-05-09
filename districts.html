@@ -4,7 +4,8 @@
   </head>
 <body>
   <h1> Coronavirus in Bangladesh</h1>
-  <p>Last Update: <b>2020 May 05 14 Hr GMT+6 </b></p>
+	<p>Last Update</p>  
+	<p id="update_par">2020 May 05 14 Hr GMT+6</p>
  <ul>
    <li><a href="https://iit-nstu.github.io/corona-virus-bd/">Home</a></li>
    <li>Know about <a href="https://iit-nstu.github.io/">IIT-NSTU</a></li><a href="https://iit-nstu.github.io/">
@@ -110,12 +111,34 @@
 <div>  
 </div>
 <script>
+
+var update_text=document.getElementById("update_par");
+update_text.innerHTML=readTextFile("https://github.com/IIT-NSTU/corona-virus-bd/raw/master/update.txt");
   
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                return allText;
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
 var my_district=document.getElementById("dist");
 var dist_param=getUrlParam("d","d");
 var my_select = document.getElementById("districts");
 var select_a=document.getElementById("select_dist")
 var my_unit_select = document.getElementById("units");
+
 
 if(dist_param!="d"){
   my_district.innerHTML=dist_param;
