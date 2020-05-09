@@ -1,9 +1,9 @@
 <html>
 <head>
-  <title>Ranking Districts</title>
+  <title>Districts</title>
   </head>
 <body>
-  <h1> Coronavirus in Bangladesh: Ranking Districts</h1>
+  <h1> Coronavirus in Bangladesh</h1>
   <p>Last Update: <b>2020 May 05 14 Hr GMT+6 </b></p>
  <ul>
    <li><a href="https://iit-nstu.github.io/corona-virus-bd/">Home</a></li>
@@ -16,12 +16,21 @@
      </ul>
   </ul>
 <div>
-<p id="dist">District</p>
+<p id="dist">Barguna District</p>
+<div id="visualization-part">
+   <img src="https://github.com/IIT-NSTU/corona-virus-bd/raw/master/n_zero_plot_dist_Barguna.png" id="district-data-image"/>
+<div>  
 </div>
 <script>
 
 var my_district=document.getElementById("dist");
-my_district.innerHTML=getUrlParam("d","No District");
+var dist_param=getUrlParam("d","d");
+if(dist_param!="d"){
+  my_district.innerHTML=dist_param;
+  var my_img = document.getElementById("district-data-image");
+  my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/n_zero_plot_dist_"+dist_param+".png"; 
+}
+
   
 function getUrlVars() {
     var vars = {};
