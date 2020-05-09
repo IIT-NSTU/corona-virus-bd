@@ -89,7 +89,7 @@
 <option value="Sylhet">Sylhet</option>
       </select>
     </td>
-      <td><input type="button" value="Go" onclick="selectDistrict()" /></td>
+      <td><a  href="https://iit-nstu.github.io/corona-virus-bd/districts.html?d=Barguna" id="select_dist">Go</a></td>
     </tr>
   </table>
 <p id="dist">Barguna District</p>
@@ -102,7 +102,7 @@
 var my_district=document.getElementById("dist");
 var dist_param=getUrlParam("d","d");
 var my_select = document.getElementById("districts");
-
+var select_a=document.getElementById("select_dist")
 if(dist_param!="d"){
   my_district.innerHTML=dist_param;
   var my_img = document.getElementById("district-data-image");
@@ -110,7 +110,7 @@ if(dist_param!="d"){
 }
   
 function selectDistrict(){
-    location.replace("https://iit-nstu.github.io/corona-virus-bd/districts.html?d"=my_select.value);   
+  select_a.setAttribute("href","https://iit-nstu.github.io/corona-virus-bd/districts.html?d"=my_select.value);
 }
   
 function getUrlVars() {
