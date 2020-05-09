@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Ranking Districts</title>
+  </head>
+<body>
+  <h1> Coronavirus in Bangladesh: Ranking Districts</h1>
+  <p>Last Update: <b>2020 May 05 14 Hr GMT+6 </b></p>
+ <ul>
+   <li><a href="https://iit-nstu.github.io/corona-virus-bd/">Home</a></li>
+   <li>Know about <a href="https://iit-nstu.github.io/">IIT-NSTU</a></li><a href="https://iit-nstu.github.io/">
+   </a><li><a href="https://iit-nstu.github.io/">COVID-19, </a><a href="https://iit-nstu.github.io/corona-virus-bd">Data Science Group, IIT-NSTU</a></li>
+    <li>Data Sources</li>
+   <ul>
+    <li><a href="https://www.iedcr.gov.bd/">IEDCR</a></li>
+     <li><a href="https://www.bangladesh.gov.bd/">Bangladesh Govt. Web Portal</a></li>
+     </ul>
+  </ul>
+<div>
+<p></p>
+</div>
+<script>
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+}
+</script>
