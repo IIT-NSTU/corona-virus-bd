@@ -113,24 +113,17 @@
 <script>
 
 var update_text=document.getElementById("update_par");
-update_text.innerHTML=readTextFile("https://github.com/IIT-NSTU/corona-virus-bd/raw/master/update.txt");
+readTextFile("https://github.com/IIT-NSTU/corona-virus-bd/raw/master/update.txt");
   
 function readTextFile(file)
 {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                return allText;
-            }
-        }
-    }
-	rawFile.send(null);
+const reader = new FileReader();
+reader.onload = function fileReadCompleted() {
+    // when the reader is done, the content is in reader.result.
+    //console.log(reader.result);
+	  update_text.innerHTML=reader.result;
+};
+reader.readAsText(file);
 }
 
 var my_district=document.getElementById("dist");
