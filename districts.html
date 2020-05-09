@@ -110,9 +110,8 @@ if(dist_param!="d"){
 }
   
 function selectDistrict(){
-              var my_img = document.getElementById("district-data-image");
-              my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/n_zero_plot_dist_"+my_select.value+".png";              
-            }
+    window.location.href = 'https://iit-nstu.github.io/corona-virus-bd/districts.html?d'=my_select.value;    
+}
   
 function getUrlVars() {
     var vars = {};
