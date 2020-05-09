@@ -115,6 +115,8 @@ var my_district=document.getElementById("dist");
 var dist_param=getUrlParam("d","d");
 var my_select = document.getElementById("districts");
 var select_a=document.getElementById("select_dist")
+var my_unit_select = document.getElementById("units");
+
 if(dist_param!="d"){
   my_district.innerHTML=dist_param;
   var my_img = document.getElementById("district-data-image");
@@ -140,4 +142,7 @@ function getUrlParam(parameter, defaultvalue){
         }
     return urlparameter;
 }
+	function refresh(){
+              my_img.src= "https://github.com/IIT-NSTU/corona-virus-bd/raw/master/n_"+my_unit_select.value+"_plot_dist_"+dist_param+".png";              
+            }
 </script>
